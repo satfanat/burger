@@ -1,0 +1,68 @@
+
+	
+typeof változó - változó típusának lekérdezése (string, szám. boolean stb.)	
+	
+function valami(){  } - függvény létrehozása, tartalom a kapcsos zárójelben	
+let - változó létrehozása értékkel, vagy anélkül	
+document.querySelector - html elem kiválasztása
+valami.innerHTML = változó; - html elem megváltoztatása
+parseInt - számmá alakítás
+const - konstans érték
+
+Metódusok:
+
+változó.length; - változó karaktereinek száma
+változó.trim(); - változó szóközeinek levágása
+változó.concat(valtozo2); - változók egyesítése, összefűzése
+változó.toLowerCase(); - változó kisbetűre alakítása
+változó.toUpperCase(); - változó nagybetűre alakítása
+változó.indexOf("valami"); - szöveg keresése a változóban
+változó.replace("valamiről", "valamire"); - szöveg cseréje a változóban
+Boolean(változó) - ha nem nulla szám vagy nulla db karakter akkor true
+! - tagadás
+&& - és
+|| - vagy
+if - ha
+else if - különben ha
+else - akkor
+isNan(változó) - megmondja hogy Nan vagy nem Nan a változó értéke
+// - komment
+
+Tömbök metódusai
+változó.push("valami"); - a tömb végére adja hozzá a valamit (új elemet)
+változó.pop();          - törli a tömb utolsó elemét
+változó.unshift("valami"); - a tömb elejére adja hozzá a valamit (úje elemet)
+változó.shift();          - törli a tömb első elemét
+
+Objektumok
+let valami = { }; - új üres valami nevű objektum létrehozása
+let valami = {kulcs: érték, kulcs2: érték2, kulcs3: érték3}; - valami nevű objektum értékekkel, a kulcs mindig string lehet
+valami.kulcs2 - a valami nevű objektum kulcs2 nevű kulcsának lehívása
+valami["kulcs2"] - ugyanaz mint az előző
+Object.keys( valami ); - megmutatja, hogy a valami nevű objektumnak milyen kulcsai vannak
+Object.values( valami ); - megmutatja, hogy a valami nevű objektumnak milyen értékei vannak
+Object.entries( valami ); - megmutatja, hogy a valami nevű objektumnak milyen értékei és kulcsai vannak (tömb formátumban) entrie - kulcs - érték=értékpár
+Object.entries( valami )[1]; - megmutatja hogy a valami nevű objektumban mi a második kulcs és értéke
+Object.entries( valami )[1][0]; - megmutatja hogy a valami nevű objektumban a második kulcsot (érték nélkül)
+Object.keys(valami).length; - megmutatja, hogy a valami nevű objektumnak hány kulcsa van (előszőr tömböt csinál belőle hogy megszámolhassa mert az objekttumnak nincs length formátuma)
+Object.values(valami).length; - megmutatja, hogy a valami nevű objektumnak hány értéke van (előszőr tömböt csinál belőle hogy megszámolhassa)
+valami = {}; - valami nevű objektum tartalmának törlése, (a zárójelbe írje megváltoztathatom az értékeket)
+const valami; = {kulcs: érték, kulcs2: érték2, kulcs3: érték3}; - valami nevű objektum létrehozása értékekkel, később csak az objektum tartalma lesz változtatható a neve nem!
+for (let k in valami);  - for in ciklus, működik objektumra és tömbre is, a kulcsokat listázza?
+for (let k of valami);  - for in ciklus, működik objektumra és tömbre is, az értékeket listázza?
+for (let k of Object.keys(valami)); - kiolvassa a valami objektumból a kulcsokat
+for (let k of Object.values(valami)); - kiolvassa a valami objektumból a kulcsokat
+for (let k of Object.entries(valami)); - kiolvassa a valami objektumból az értékpárokat
+this - ?????????? rámutat valamire
+$ - arrow function
+
+
+
+
+
+
+
+
+
+
+
