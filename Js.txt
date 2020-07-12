@@ -1,4 +1,4 @@
-
+﻿
 	
 typeof változó - változó típusának lekérdezése (string, szám. boolean stb.)	
 	
@@ -35,6 +35,7 @@ változó.unshift("valami"); - a tömb elejére adja hozzá a valamit (úje elem
 változó.shift();          - törli a tömb első elemét
 
 Objektumok
+
 let valami = { }; - új üres valami nevű objektum létrehozása
 let valami = {kulcs: érték, kulcs2: érték2, kulcs3: érték3}; - valami nevű objektum értékekkel, a kulcs mindig string lehet
 valami.kulcs2 - a valami nevű objektum kulcs2 nevű kulcsának lehívása
@@ -53,14 +54,16 @@ for (let k of valami);  - for in ciklus, működik objektumra és tömbre is, az
 for (let k of Object.keys(valami)); - kiolvassa a valami objektumból a kulcsokat
 for (let k of Object.values(valami)); - kiolvassa a valami objektumból a kulcsokat
 for (let k of Object.entries(valami)); - kiolvassa a valami objektumból az értékpárokat
-this - ?????????? rámutat valamire
-$ - arrow function
+this - ?????????? rámutat valamire a változó neve helyett lehet használni
+$ - arrow function, function helyett => jelet használni,és a függvény kapcsos zárójele is elhagyható
 
+DOM
 
-
-
-
-
+document.getElementById("valami id") - elem keresése id alapján
+document.getElementsByName("valami neve") - elem keresése név alapján, eredménye tömb lesz
+document.getElementsByClassName("valami-osztály") - elem keresése osztály alapján, eredménye tömb lesz
+document.getElementsByTagName("html elem") - elem keresése HTML elemre (pl h1, h3) eredménye tömb lesz
+document.querySelector(".css osztály") - elem keresése HTML elemre? ezt szokták használni, eredmény element nevű objektum
 
 
 
