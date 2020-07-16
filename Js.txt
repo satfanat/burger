@@ -1,15 +1,26 @@
-﻿
-	
-typeof változó - változó típusának lekérdezése (string, szám. boolean stb.)	
+﻿VÁLTOZÓK	
 	
 function valami(){  } - függvény létrehozása, tartalom a kapcsos zárójelben	
-let - változó létrehozása értékkel, vagy anélkül	
+let - változó létrehozása értékkel, vagy anélkül
+string(szám); - szám sztringgé alakítása
+változóNeve.toString() - változó sztringgé alakítása
+number(változó) - változó számmá alakítása, ha lehetséges (explicit módon)
+typeof változó - változó típusának lekérdezése (string, szám. boolean stb.)
+változóNeve.toFixed(2) - number változó értékének kerekítése 2 tizedesre
+változóNeve.toPrecision(3) - number változó értékének kerekítése és vágása 3 számjegyűre (tizedessel együtt)	
 document.querySelector - html elem kiválasztása
 valami.innerHTML = változó; - html elem megváltoztatása
-parseInt - számmá alakítás
+parseInt() - számmá alakítás egész számmá
+parseFloat() - számmá alakítás tizedessel
 const - konstans érték
+alert("valami" + változó) - felugró alakban üzenet + a változó értéke
+<button onclick="függvény neve()" type="button">Szöveg</button> -  kattintásra indul a függvény
+document.querySelector("input[name='valami']"); - html dokumentumban egy input elem nevének kiválasztása
+let változó = document.querySelector("input[name='css osztály neve']"); - kiválasztott elem változóvá tétele
+változó.value - változó értékének kiolvasása sztringen
+változó.innerHtml = másikváltozó; - változó értékét beírja egy Html elembe
 
-Metódusok:
+METÓDUSOK:
 
 változó.length; - változó karaktereinek száma
 változó.trim(); - változó szóközeinek levágása
@@ -20,12 +31,15 @@ változó.indexOf("valami"); - szöveg keresése a változóban
 változó.replace("valamiről", "valamire"); - szöveg cseréje a változóban
 Boolean(változó) - ha nem nulla szám vagy nulla db karakter akkor true
 ! - tagadás
+== - engyenlőség
+!= - nem egyenlő
 && - és
 || - vagy
 if - ha
 else if - különben ha
 else - akkor
 isNan(változó) - megmondja hogy Nan vagy nem Nan a változó értéke
+változó = isNaN(változó) ? érték : változó; - ha a változó értéke NaN, akkor a változó helyére beírja az értéket
 // - komment
 
 Tömbök metódusai
@@ -34,7 +48,14 @@ változó.pop();          - törli a tömb utolsó elemét
 változó.unshift("valami"); - a tömb elejére adja hozzá a valamit (úje elemet)
 változó.shift();          - törli a tömb első elemét
 
-Objektumok
+FÜGGVÉNYEK
+
+function név() {függvény törzse}; - függvény létrehozása
+függvény neve(); - a függvény elindítása
+
+
+
+OBJEKTUMOK
 
 let valami = { }; - új üres valami nevű objektum létrehozása
 let valami = {kulcs: érték, kulcs2: érték2, kulcs3: érték3}; - valami nevű objektum értékekkel, a kulcs mindig string lehet
