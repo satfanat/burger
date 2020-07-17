@@ -53,7 +53,32 @@ FÜGGVÉNYEK
 function név() {függvény törzse}; - függvény létrehozása
 függvény neve(); - a függvény elindítása
 
+let - block scope típusú
+var - object scope típusú
 
+
+
+TÖMBÖK
+
+let tömb = ["x", "y", "z"]; - tömb létrehozása, lehet string, number, boolean, null is
+tömb[2] - meghívja a tömb 2.-ik elemét (valójában a harmadikat mert 0-val kezdődik)
+Array.isArray(tömbneve) - megmondja a változóról hogy tömb vagy nem tömb
+tömb.push("újelem") - a tömb végére hozzáad egy új elemet
+tömb.pop() - a tömb végéről elvesz egy elemet
+tömb.unshift("újelem") - a tömb elejéhez hozzáad egy új elemet
+tömb.shift() - a tömb elejéről elesz elvesz egy elemet
+tömb.slice(0, 2); - a tömbből kivágja a 0-től 2-ig tartozó elemeket, 2-es már nem lesz benne, új tömböt alkot az eredeti nem változik
+tömb.splice(1, 2); - a tömbből kivág az 1-el kezdődően 2 db elemet, az eredeti tömböt írja felül
+tömb.splice(1, 0, "valami"); - a tömbből kivág az 1-es helyről 0 db elemet, és hozzáadja a valamit (a helyére) az eredeti tömböt írja felül
+tömb.join(", "); - tömb elemeit stringgé alakítja (összefűzi őket) 
+tömb.length - tömb elemeinek száma
+
+CIKLUSOK
+for (let i = 0; i < 5; i++) - i=0 kezdőérték, i<5 - feltétel addig fut amig i<5, i++ - növeld eggyel az értéket ha lefutott a ciklus
+continue, break parancsok a ciklus megszakításához
+
+változó = változó + 10    rövidebben     változó += 10  - összetett operátor
+változó = feltétel ? haigaz : hahamis; - ternary operator
 
 OBJEKTUMOK
 
