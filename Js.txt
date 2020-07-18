@@ -58,6 +58,9 @@ var - object scope típusú
 
 
 
+
+
+
 TÖMBÖK
 
 let tömb = ["x", "y", "z"]; - tömb létrehozása, lehet string, number, boolean, null is
@@ -79,6 +82,45 @@ continue, break parancsok a ciklus megszakításához
 
 változó = változó + 10    rövidebben     változó += 10  - összetett operátor
 változó = feltétel ? haigaz : hahamis; - ternary operator
+
+
+ÖSSZEGZŐ ALGORITMUS
+let tömb = [1, 2, 5, 3, 9, 7, 4];                       - tömb létrehozása
+let változó = 0;                                        - akkumulátor változó létrehozása
+for (let i = 0; i < tömb.length; i++) {
+változó += tömb[i];                                     - for ciklus, benne függvény létrehozása
+}
+console.log(változó) -                                  - változó kiírása konzolra
+
+
+SZÁMLÁLÓ ALGORITMUS
+let tömb = [1, 2, 5, 3, 9, 7, 4];                       - tömb létrehozása
+let változó = 0;                                        - akkumulátor változó létrehozása
+for (let i = 0; i < tömb.length; i++) {
+if (tömb[i] % 2 == 0) {
+változó ++;}                                            - for ciklus, benne függvény (feltétel) létrehozása (pl. páros számok darabja)
+}
+console.log(változó) -                                  - változó kiírása konzolra
+
+ 
+SZÉLSŐÉRTÉK SZÁMÍTÓ ALGORITMUS
+let tömb = [1, 2, 5, 3, 9, 7, 4];                       - tömb létrehozása
+let változó = tömb[0];                                  - ez a aváltozó legyen a tömb első eleme
+for (let i = 0; i < tömb.length; i++) {
+if (tömb[i] > változó) {
+változó = tömb[i];}                                      - for ciklus, benne függvény (feltétel) létrehozása (pl. legnagyobb szám)
+}
+console.log(változó) -                                  - változó kiírása konzolra
+
+ELDÖNTŐ ALGORITMUS
+let tömb = [1, 2, 5, 3, 9, 7, 4];                       - tömb létrehozása
+let változó = false;                                    - ez a aváltozó legyen a tömb első eleme
+for (let i = 0; i < tömb.length && változó == false; i++) {
+if (tömb[i] = 5) { 
+változó = true;}                                        - for ciklus, benne függvény (feltétel) létrehozása (pl. van-e benne 5)
+}
+console.log(változó) -                                  - változó kiírása konzolra
+
 
 OBJEKTUMOK
 
