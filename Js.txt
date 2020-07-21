@@ -1,4 +1,166 @@
-﻿VÁLTOZÓK	
+﻿Alap HTML elemek
+
+<!DOCTYPE html>
+<html lang="hu">			 	  		   	#html keret eleje és a dokumentum nyelvve
+<head> 										 #fejrész eleje
+<title>Oldal címe</title>					 #cím
+<meta charset="UTF-8">						 #karakter kódolás
+<meta name=" " content=" ">					 #kulcsszavak, rövid leírás
+<link rel="stylesheet" href="valami.css">    #külső CSS file útvonal
+</head> 									 #fejrész vége
+<body>										 #tartalom eleje	 
+</body>										 #tartalom vége
+<footer> </footer>							 #lábléc
+</html> 									 #html keret vége
+
+<h1>   </h1>										    	 #címsorok h1, h2, h3, h4, h5, h6
+<p>    </p>													 #szöveg elem előtte - utána margó van
+<p style="color:blue">Szöveg</p>							 #szöveg színe(kék)	
+<p title="Alternatív"> Eredeti szöveg</p>					 #alternatív szöveg egér alatt
+<p> elso<br>masodik </p> 								     #sortörés szöveg közben
+<pre>    </pre>	  											 #formázott szöveg
+<a href="http://www.horvatorszagonline.hu">Egy link</a>		 #link egy oldalra - "a" elem
+target="_blank"			#megnyitás új ablakban
+target="_self"			#megnyitás a meglévő helyén (alapértelmezett)
+target="_parent"		#
+target="_top"			#
+
+
+
+<img src="kep.jpg" alt="szöveg" width="500" height="200">	 #kép beillesztése szöveggel és mérettel
+
+Attributumok
+alt			# alternatív szöveg
+disabled	# nem jelenik meg
+href	    # link
+id	        # egyedi azonosító (a CSS #után hivatkozik rá)
+src	   		# kép forrás helye
+style	    # szöveg stílus (CSS, méret , szín)
+title	    # alternatív szöveg egér alatt
+
+<style> </style>		#stílusok helye ha nincs külön CSS
+color					#szín
+background-color		#háttér szín
+border-color			#keret szín
+border-color			#keret vastagság
+font-family				#betű típus
+font-size				#betű méret
+text-align 				#szöveg igazítás (center, left, right)	
+padding					#kereten belüli távolság
+margin 					#kereten kívüli távolság
+class="valami"			#osztály amire majd a CSS hivatkozik .után
+float					#kép megjelenés (left, right)
+background-image		#háttérkép
+background-repeat		#háttérkép ismétlés
+background-attachment	#háttérkép pozíció
+background-size			#háttérkép méret
+
+Szöveg formázás
+<b>	</b>			#félkövér
+<strong> </strong>	#kiemelt, ugyanúgy félkövér
+<i>	 </i>			#dőlt
+<em> </em>			#mint a dőlt
+<mark> </mark>		#kiemelt háttér
+<del> </del>		#áthúzott szöveg
+<ins> </ins>		#aláhúzott szöveg
+<sub> </sub>		#alsó kitevő szövege
+<sup> </sup> 		#felső kitevő szövege
+<q> </q>			#szöveg idézőjelben
+<blockquote> </blockquote>	#idézet
+<abbr>  </abbr>				#rövidítés hosszabb szövege
+<address> </address>		#lakcímet írnak közé
+<cite> </cite>				#cím
+<bdo> </bdo>				#szöveg irány
+
+<hr>     					# vízszintes vonal, elválasztó
+<!-- Komment -->			 #megjegyzés a kódban
+
+
+<table>							#táblázat eleje
+<thead>							#táblázat fejléc eleje
+  <tr>							#sor eleje
+    <th>Firstname</th>			#oszlop címe
+    <th>Lastname</th>			#oszlop címe
+    <th>Age</th>				#oszlop címe
+  </tr>							#sor vége
+</thead>						#táblázat fejléc vége 
+<tbody>							#táblázat tartalom eleje 
+   <tr>							#sor eleje
+    <td>Jill</td>				#oszlop szöveg
+    <td>Smith</td>				#oszlop szöveg
+    <td>50</td>					#oszlop szöveg
+  </tr>							#sor vége
+</tbody>						#táblázat tartalom vége  
+</table>						#táblázat vége
+
+ <th rowspan="2">Szöveg</th>	#sor összevonás
+ <th colspan="2">Szöveg</th>	#oszlop összevonás
+<caption> </caption>			#táblázat felirat
+  
+<ul>						#rendezetlen felsorolás eleje
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>						#rendezetlen felsorolás eleje
+
+<ol>						#rendezett felsorolás eleje
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>   					#rendezett felsorolás vége									   	
+
+<div> </div>				 #szövegdoboz
+<span> </span>				 #szövegrész formázása
+<iframe src="URL"></iframe>	 #Iframe beillesztés
+<script> </script>			 #script beillesztés
+<noscript> </noscript>		 #alternatív szöveg, ha nem indul a script
+
+&nbsp;						 #üres sor
+
+<form>  					#ürlap eleje
+<label> szöveg </label>		#mező felirata
+<input type="text"			#szöveg mezője
+<input type="radio">		#választó (rádió) gomb
+<input type="submit">		#elfogadom gomb
+<input type="button">
+<input type="checkbox">
+<input type="color">		#szín választó
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="range">
+<input type="reset">		#eredeti szöveg visszaállítása
+<input type="search">
+<input type="tel">
+<input type="time">
+<input type="url">
+<input type="week">
+
+
+<select>					legördülő menü eleje
+<option value="1">1</option>#legördülő menü elem
+<option value="2">2</option>#legördülő menü elem
+</select>					#legördülő menü eleje
+<textarea> </textarea>		#szöveg doboz kitöltendő
+</form>						#ürlap vége
+<button> </button>		    #gomb beillesztése
+<fieldset> </fieldset>		#űrlap keret
+<legend> </legend>			#űrlap keretének szövege
+<datalist> </datalist>		#menüben megjelenő szöveg
+
+
+
+
+
+
+
+VÁLTOZÓK	
 	
 function valami(){  } - függvény létrehozása, tartalom a kapcsos zárójelben	
 let - változó létrehozása értékkel, vagy anélkül
@@ -153,7 +315,12 @@ document.getElementsByClassName("valami-osztály") - elem keresése osztály ala
 document.getElementsByTagName("html elem") - elem keresése HTML elemre (pl h1, h3) eredménye tömb lesz
 document.querySelector(".css osztály") - elem keresése HTML elemre? ezt szokták használni, eredmény element nevű objektum
 
-
-
-
+BACKEND
+npm install lodash - lodash telepítése konzolon, lokális telepítés egy mappába
+npm install express-generator -g - globális telepítés
+const változó = require('lodash'); - lodash betöltése js fileba
+npm init -y   - package.json file létrehozása
+npm remove lodash   - lodash eltávolítása
+install -g json-server - a json-server telepítése globálisan
+mpx json-server --watch ./db/db.json - figyeli a JSON fájlt a szerver, ha módosul
 
