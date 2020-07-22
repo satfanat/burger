@@ -322,5 +322,11 @@ const változó = require('lodash'); - lodash betöltése js fileba
 npm init -y   - package.json file létrehozása
 npm remove lodash   - lodash eltávolítása
 install -g json-server - a json-server telepítése globálisan
-mpx json-server --watch ./db/db.json - figyeli a JSON fájlt a szerver, ha módosul
+npx json-server --watch ./db/db.json - figyeli a JSON fájlt a szerver, ha módosul
+
+JSON.parse(változó) - stringől készít objektumot
+JSON.stringify(változó) - objektumból készít stringet
+setTimeout() => {függvény}, 3000); - 3 mp késleltetés beállítása
+
+
 
